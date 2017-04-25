@@ -6,7 +6,8 @@
     <div id="error_explanation">
       <ul>
         
-<% message.errors.full_messages.each do |task| %>
+<% task.errors.full_messages.each do |error_message| %>
+          <li><%= error_message %></li>
 
           <li>
 <%= task %>
